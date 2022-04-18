@@ -63,3 +63,10 @@
 ```
 
 - If you need to have 2 manifest on fine file you can put 3 hyphen ("---") between.
+- **kind**: we can get a list of resources the cluster supports.
+  > kubectl api-resources
+  - some resources may have multiple API's (old vs. new)
+- **apiVersion**: we can get the API versions the cluster supports:
+  > kubectl api-versions
+- **metadata**: only name is required.
+- **spec**: where all the action is at!
