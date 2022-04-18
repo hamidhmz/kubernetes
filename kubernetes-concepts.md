@@ -1,4 +1,4 @@
-# kubernetes
+# kubernetes: container orchestrator, make many servers act like one.
 
 ## Basics concepts
 
