@@ -36,25 +36,17 @@
 ### service & and exposing a pod (container)
 
 - a service in general means a stable address for pod(s)
-- kubectl expose deploy/<deployment name> --port <port number> --type ClusterIP | NodePort | LoadBalancer  : creates a service for existing pods
-- 
+- kubectl expose deploy/<deployment name> --port <port number> --type ClusterIP | NodePort | LoadBalancer : creates a service for existing pods
 
-#### service types in kubernetes
+## apply command
 
-1. Cluster IP (default) :
+- create/update resources in a file.
 
-- only available inside cluster,
-- can access to ports.
-- can access to ports.
+  > kubectl apply -f myFile.yaml
 
-2. Node port:
+- create/update a whole directory of yaml
 
-- you will access the pod from out side of cluster.
+  > kubectl apply -f MyYamlDirectory/
 
-3. Load balancer
-
-- good for cloud providers.
-
-4. External name
-
-5. Ingress
+- create/update from a URL
+  > kubectl apply -f https://example.com/pod.yml

@@ -27,3 +27,23 @@
 - Declarative objects: kubectl apply -f file.yml or dir\.diff
   - Best for prod, easier to automate.
   - Harder to understand and predict changes.
+
+#### service types in kubernetes
+
+1. Cluster IP (default) :
+
+- only available inside cluster,
+- can access to ports.
+- can access to ports.
+
+2. Node port:
+
+- you will access the pod from out side of cluster.
+
+3. Load balancer
+
+- good for cloud providers.
+
+4. External name
+
+5. Ingress
