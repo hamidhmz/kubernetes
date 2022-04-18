@@ -8,6 +8,7 @@
 
 - two ways to deploy pods (containers): Via commands, or via yaml.
 - kubectl run <name of the pod> --image <image name>
+- kubectl run <name of the pod> --image <image name> --dry-run -o yaml
 - kubectl delete pod <name of the pod>
 - kubectl get pods
 - kubectl logs pod/<name of the pod>

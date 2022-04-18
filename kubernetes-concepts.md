@@ -15,3 +15,15 @@
 
 - you can output those template with --dry-run -o yaml
 
+## commands and management approaches
+
+- Imperative commands: kubectl run, expose, scale, create.
+  - Best for dev/learning/personal projects
+  - Hardest to manage over time
+- Imperative objects: kubectl create -f file.yml, replace -f file.yml, delete -f file.yml
+  - Good for prod of small environments, single file per command.
+  - Store your changes in git-based yaml files.
+  - Hard to automate.
+- Declarative objects: kubectl apply -f file.yml or dir\.diff
+  - Best for prod, easier to automate.
+  - Harder to understand and predict changes.
