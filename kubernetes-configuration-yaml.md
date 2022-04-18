@@ -70,3 +70,10 @@
   > kubectl api-versions
 - **metadata**: only name is required.
 - **spec**: where all the action is at!
+
+## explain command
+
+- get all the keys each kind supports:
+  > kubectl explain services --recursive
+- walk through the spec this way:
+  > kubectl explain services.spec.type --recursive

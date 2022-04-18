@@ -28,7 +28,7 @@
   - Best for prod, easier to automate.
   - Harder to understand and predict changes.
 
-#### service types in kubernetes
+## service types in kubernetes
 
 1. Cluster IP (default) :
 

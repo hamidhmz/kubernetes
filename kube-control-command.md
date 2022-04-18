@@ -38,7 +38,7 @@
 - a service in general means a stable address for pod(s)
 - kubectl expose deploy/<deployment name> --port <port number> --type ClusterIP | NodePort | LoadBalancer : creates a service for existing pods
 
-## apply command
+### apply command
 
 - create/update resources in a file.
 
@@ -50,3 +50,20 @@
 
 - create/update from a URL
   > kubectl apply -f https://example.com/pod.yml
+
+### explain command
+
+- get all the keys each kind supports:
+  > kubectl explain services --recursive
+- walk through the spec this way:
+  > kubectl explain services.spec.type --recursive
+
+### dry run
+
+- kubectl apply =f app.yml --dry-run which is only for client side and doesn't give us a lot of infos what will happen on the server.
+- kubectl apply =f app.yml --server-dry-run which will go to the server and check all the info and will give us back what will happen to the server.
+
+### see a diff
+
+- if we wanna see what are the new changes compare to server:
+  > kubectl diff -f app.yml
