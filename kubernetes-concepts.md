@@ -10,3 +10,8 @@
 - Namespace: filtered group of objects in cluster.
 - Secrets: ...
 - ConfigMaps: ...
+
+**_ all commands will use an helper templates called "Generators". _**
+
+- you can output those template with --dry-run -o yaml
+
