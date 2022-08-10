@@ -13,6 +13,7 @@
 - kubectl get pods
 - kubectl logs pod/<name of the pod>
 - kubectl describe pod/<name of the pod>
+- kubectl port-forward svc/<name of the pod> 3002:80
 
 ### deployment
 
